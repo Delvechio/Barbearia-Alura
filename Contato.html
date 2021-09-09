@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="caixa">
-            <h1><img src="imagens/logo.png" alt=""></h1>
+            <h1><img src="imagens/logo.png" alt="Logo da Barbearia Alura"></h1>
 
             <nav>
                 <ul class="navegação">
@@ -25,20 +25,44 @@
     <main>
         <form action="">
             <label for="NomeSobrenome">Nome e sobrenome </label>
-            <input type="text" id="NomeSobrenome">
+            <input class="padrao" type="text" id="NomeSobrenome" required>
 
             <label for="Email">Email</label>
-            <input type="text" id="Email">
+            <input class="padrao" type="email" id="Email" required placeholder="Seuemail@dominio.com">
 
             <label for="Telefone">Telefone</label>
-            <input type="text" id="Telefone">
+            <input class="padrao"  type="tel" id="Telefone" required placeholder="(XX) XXXXX-XXXX">
             
-            <input type="submit" value="Enviar formulário">
+            <label for="mensagem">Mensagem</label>
+            <textarea class="padrao" cols="70" rows="10" id="mensagem" required></textarea>
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
+                
+            </fieldset>
+            <fieldset>
+            <legend>Qual horário prefere ser atendido?</legend>
+            <select name="" id="">
+                <option value="">Manhã</option>
+                <option value="">Tarde</option>
+                <option value="">Noite</option>
+            </select>
+            </fieldset>
+            <label class="checkbox" for=""><input type="checkbox">Gostaria de receber novidades por email?</label>
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+
 
         </form>
     </main>
     <footer>
-        <img src="imagens/logo-branco.png" alt="">
+        <img src="imagens/logo-branco.png" alt="Logo da Barbearia Alura">
         <p class="Copyright">&copy;Copyright Barbearia Alura</p>
     </footer>
 </body>
