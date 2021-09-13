@@ -222,13 +222,22 @@ th {
 
 .imagembeneficios {
 	width: 50%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
 }
 
-.items{
+.imagembeneficios:hover{
+	opacity: 0.3;
+}
+
+.itens{
 	line-height: 1.5;
 }
-
-.items:first-child{
+.itens:before{
+	content: "★";
+}
+.itens:first-child{
 	font-weight: bold;
 }
 
